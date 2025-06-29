@@ -98,8 +98,8 @@ const PodcastList = () => {
         </div>
       ) : (
         <div className="podcast-list">
-          {podcasts.map((podcast) => (
-            <div className="podcast-card" key={podcast.collectionId}>
+          {podcasts.map((podcast, i) => (
+            <div className="podcast-card" key={podcast.collectionId + '-' + i}>
               <Link to={`/podcast/${podcast.collectionId}`}>
                 <img src={podcast.artworkUrl100} alt={podcast.collectionName} />
               </Link>

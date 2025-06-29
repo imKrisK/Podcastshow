@@ -17,7 +17,7 @@ const ThemePicker = () => {
       <div style={{display: 'flex', gap: 16}}>
         {ACCENTS.map(a => (
           <button
-            key={a.name}
+            key={a.name + '-' + a.color}
             style={{
               width: 36, height: 36, borderRadius: '50%', border: accent === a.color ? '2px solid #222' : '1px solid #e5e7eb', background: a.color, cursor: 'pointer', outline: accent === a.color ? '2px solid #6366f1' : 'none'
             }}

@@ -11,8 +11,8 @@ const FavoritesPage = () => {
         {favorites.length === 0 ? (
           <div style={{textAlign: 'center', color: '#888', marginTop: 40}}>No favorites yet.</div>
         ) : (
-          favorites.map((podcast) => (
-            <div className="podcast-card" key={podcast.id}>
+          favorites.map((podcast, i) => (
+            <div className="podcast-card" key={podcast.id + '-' + i}>
               <Link to={`/podcast/${podcast.id}`}>
                 <img src={podcast.image} alt={podcast.title} />
               </Link>

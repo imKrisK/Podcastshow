@@ -62,8 +62,8 @@ const PodcastDetail = () => {
         <div style={{color: '#888', fontSize: 14}}>No episodes found or failed to load RSS feed.</div>
       ) : (
         <ul style={{listStyle: 'none', padding: 0, width: '100%'}}>
-          {episodes.map(ep => (
-            <li key={ep.guid || ep.audioUrl} style={{marginBottom: 24, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+          {episodes.map((ep, i) => (
+            <li key={(ep.guid || ep.audioUrl) + '-' + i} style={{marginBottom: 24, borderBottom: '1px solid #eee', paddingBottom: 16}}>
               <div style={{fontWeight: 600, marginBottom: 4}}>{ep.title}</div>
               <div style={{fontSize: 13, color: '#888', marginBottom: 6}}>{ep.pubDate && new Date(ep.pubDate).toLocaleDateString()}</div>
               <div style={{fontSize: 14, marginBottom: 8, cursor: 'pointer', color: '#6366f1', textDecoration: 'underline'}} onClick={() => setModalEp(ep)} tabIndex={0} role="button" aria-label="Show episode details" onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setModalEp(ep); }}>Show details</div>

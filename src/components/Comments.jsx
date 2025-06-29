@@ -25,7 +25,7 @@ const Comments = ({ episodeId }) => {
       <h4>Comments</h4>
       <ul style={{padding: 0, listStyle: 'none'}}>
         {comments.map((c, i) => (
-          <li key={i} style={{marginBottom: 8, fontSize: 15}}>
+          <li key={'comment-' + i} style={{marginBottom: 8, fontSize: 15}}>
             <span style={{color: '#888', fontSize: 12, marginRight: 8}}>{new Date(c.date).toLocaleString()}</span>
             {c.text}
           </li>

@@ -10,7 +10,7 @@ const RecentlyPlayedSection = () => {
       <h3 style={{marginBottom: 16}}>Recently Played</h3>
       <div className="podcast-list">
         {recent.map((podcast, i) => (
-          <div className="podcast-card" key={podcast.id + podcast.title + i}>
+          <div className="podcast-card" key={podcast.id + '-' + podcast.title + '-' + i}>
             <Link to={`/podcast/${podcast.id}`}>
               <img src={podcast.image} alt={podcast.title} />
             </Link>
