@@ -1,6 +1,6 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { RecentlyPlayedContext } from './RecentlyPlayedContextOnly';
 
-export const RecentlyPlayedContext = createContext();
 
 export const RecentlyPlayedProvider = ({ children }) => {
   const [recent, setRecent] = useState(() => {

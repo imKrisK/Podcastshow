@@ -1,6 +1,5 @@
-import React, { createContext, useState, useCallback, useContext } from 'react';
-
-export const ToastContext = createContext();
+import React, { useState, useCallback } from 'react';
+import { ToastContext } from './ToastContextOnly.js';
 
 export const ToastProvider = ({ children }) => {
   const [toast, setToast] = useState(null);
@@ -21,4 +20,4 @@ export const ToastProvider = ({ children }) => {
   );
 };
 
-export const useToast = () => useContext(ToastContext);
+// Moved useToast to its own file for fast refresh compatibility

@@ -4,9 +4,9 @@ import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import axios from 'axios';
 import { fetchAndParseRSS } from '../components/rssUtils';
-import { PlayerContext } from '../components/PlayerContext';
-import { RecentlyPlayedContext } from '../components/RecentlyPlayedContext';
-import { QueueContext } from '../components/QueueContext';
+import { PlayerContext } from '../components/PlayerContextOnly';
+import { RecentlyPlayedContext } from '../components/RecentlyPlayedContextOnly';
+import { QueueContext } from '../components/QueueContextOnly';
 import Modal from '../components/Modal';
 import Comments from '../components/Comments';
 

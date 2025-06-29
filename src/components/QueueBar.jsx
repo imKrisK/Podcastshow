@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { QueueContext } from '../components/QueueContext';
-import { PlayerContext } from '../components/PlayerContext';
+import { QueueContext } from '../components/QueueContextOnly';
+import { PlayerContext } from '../components/PlayerContextOnly';
 
 const QueueBar = () => {
   const { queue, removeFromQueue, clearQueue } = useContext(QueueContext);

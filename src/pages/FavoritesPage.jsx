@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { PlayerContext } from '../components/PlayerContext';
+import { PlayerContext } from '../components/PlayerContextOnly';
 
 const FavoritesPage = () => {
   const { favorites, playPodcast, toggleFavorite } = useContext(PlayerContext);

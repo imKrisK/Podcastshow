@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import AudioPlayer from 'react-h5-audio-player';
-import { PlayerContext } from './PlayerContext';
+import { PlayerContext } from './PlayerContextOnly.js';
 import SettingsContext from './SettingsContext';
 import 'react-h5-audio-player/lib/styles.css';
 

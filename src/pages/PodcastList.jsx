@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { PlayerContext } from '../components/PlayerContext';
-import { RecentlyPlayedContext } from '../components/RecentlyPlayedContext';
-import { QueueContext } from '../components/QueueContext';
+import { PlayerContext } from '../components/PlayerContextOnly';
+import { RecentlyPlayedContext } from '../components/RecentlyPlayedContextOnly';
+import { QueueContext } from '../components/QueueContextOnly';
 import axios from 'axios';
 import { useToast } from '../components/useToast';
 

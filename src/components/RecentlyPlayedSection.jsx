@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { RecentlyPlayedContext } from '../components/RecentlyPlayedContext';
+import { RecentlyPlayedContext } from '../components/RecentlyPlayedContextOnly';
 
 const RecentlyPlayedSection = () => {
   const { recent } = useContext(RecentlyPlayedContext);

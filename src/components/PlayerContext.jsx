@@ -1,6 +1,6 @@
-import React, { createContext, useState } from 'react';
 
-export const PlayerContext = createContext();
+import React, { useState } from 'react';
+import { PlayerContext } from './PlayerContextOnly.js';
 
 export const PlayerProvider = ({ children }) => {
   const [nowPlaying, setNowPlaying] = useState(null); // { podcast, episode }

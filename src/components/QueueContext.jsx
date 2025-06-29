@@ -1,6 +1,5 @@
-import React, { createContext, useState } from 'react';
-
-export const QueueContext = createContext();
+import React, { useState } from 'react';
+import { QueueContext } from './QueueContextOnly.js';
 
 export const QueueProvider = ({ children }) => {
   const [queue, setQueue] = useState([]);
